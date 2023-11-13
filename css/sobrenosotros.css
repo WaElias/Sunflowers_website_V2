@@ -1,0 +1,40 @@
+
+/*Contenido*/
+.conteiner{
+	display: flex;
+	
+	margin-left: 10em;
+	margin-right: 9em;
+}
+.sarai{
+	width: auto;
+	height: 350px;
+}
+.parrafo{
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.texto1{
+	font-size: 45px;
+	text-align: center;
+}
+hr{
+	margin-top: 3%;
+	margin-left: 5%;
+	margin-right: 10%;
+}
+.ani{
+	z-index: -100;
+	width: auto;
+	height: 240px;
+	margin-left: 200px;
+	margin-right: 290px;
+	margin-bottom: -10px;
+}
+.vid{
+	display: flex;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}

@@ -1,0 +1,67 @@
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin-top: 50px;
+	margin-bottom: 4%;
+}
+
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 50px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.creadores-t{
+	font-size: 50px;
+}
+
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#EDC4BD;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+	opacity: 0.5;
+	filter: saturate(0)
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-15%);
+	filter: saturate(1);
+		opacity: 1;
+}
+.card .pers{
+	width: 100%;
+	height: auto;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card .crea-n{
+	margin-bottom: 15px;
+	color: #D18727;
+}
+.card .contenido-card .dpers{
+	line-height: 1.8;
+	color: #704131;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}

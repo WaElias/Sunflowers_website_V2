@@ -1,0 +1,209 @@
+
+@import url(estilo_gale.css);
+@import url("sobrenosotros.css");
+@import url("p_m.css");
+@import url("pedi.css");
+@import url("crea.css");
+
+*{
+	margin: auto;
+	padding: 0;
+}
+
+body{
+	color: white;
+	background-color: #704131;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px
+}
+
+
+footer{
+	position:static;
+  	bottom: 0;
+	width: 100%;
+	height: 40px;
+	backdrop-filter: blur(50px);
+	color: #EDC4BD;
+	font-weight: bold;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+.video{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:150%;
+  z-index: -1;
+}
+
+
+.logo_menu{
+	width: 150px;
+	height: auto;
+}
+
+.cart{
+	
+	width: 30px;
+	height: auto;
+	border: thin #EDC4BD;
+	
+}
+/*barra*/
+nav {
+	z-index: 1000;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+	color: #EDC4BD;
+	font-size: 12px;
+	position: relative;
+	backdrop-filter: blur(50px);
+	font-weight: bold;
+}
+
+/*nivel 1*/
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+	margin: 2px;
+    transition:  all .3s ease 0s;
+	border-radius: 25px;
+}
+
+li:hover {
+    background-color: rgba(209,135,39,0.61) ;
+	backdrop-filter: blur(50px);
+}
+
+.lista {
+    position: relative;
+	backdrop-filter: blur(50px);
+}
+
+/*nivel 2*/
+
+.ul-second {
+	height: 10px;
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second > li {
+    width: 200px;
+    transform: translateX(-27px);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.ul-second > li:hover {
+    background-color: #AB6000;
+	border-radius: 25px;
+	display: block;
+	height: 15px;
+}
+
+.lista:hover > .ul-second {
+    display: block;
+}
+/*nivel3*/
+
+.ul-third {
+	margin-top:-20%;
+	
+    position: sticky;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    display: none;
+	border-radius: 25px;
+	backdrop-filter: blur(10px);
+}
+
+.ul-third > li {
+    padding: 1.5vw;
+}
+
+.front:hover > .ul-third {
+    display: block;
+}
+
+.link{
+	color: #EDC4BD;
+	text-decoration: none;
+}
+
+/*contenido_editar*/
+
+.text_inicio{
+	font-size: 15px;
+	text-align: justify;
+	padding-top: 5%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 5%
+}
+
+.cont{
+	display: flex;
+	align-content: center;
+	text-align:right;
+	margin-right: 10em;
+}
+
+
+.cuadro{
+	margin-top: 23px;
+	width: 120vh;
+	height: auto;
+	filter: sepia(1);
+	transition: .5s ease;
+}
+
+.cuadro:hover{
+	cursor: crosshair;
+	filter: sepia(0)
+}
+
+
+.textoA{
+	padding-bottom: 5px;
+	font-size: 40px;
+}
+.textoB{
+	padding-bottom: 5px;
+}
+
+.parrafoA{
+	padding-top: 10px;
+	font-size: 15px;
+	padding-bottom: 25px;
+}
+
+.boton{
+	padding: 12px;
+	background-color: #D18727;
+	color: #FFFFFF;
+	border: thin solid #D18727;
+	border-radius: 12px;
+	transition: .5s ease;
+}
+
+.boton:hover{
+	color: #704131;
+	background-color: #EDC4BD;
+	border: thin solid #AB6000;
+}

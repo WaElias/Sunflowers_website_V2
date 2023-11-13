@@ -1,0 +1,36 @@
+
+/*Galerias_pedidos*/
+
+.titulo{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: none
+}
+
+.gale{
+	
+	display:flex;
+	width: 1000px;
+	height: 500px;
+	padding-bottom: 1%;
+}
+.gale img{
+	
+	width: 0;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: 0.5;
+	transition: .5s ease;
+	filter: saturate(0);
+}
+
+.gale img:hover {
+	
+	width: 300px;
+	cursor: crosshair;
+	opacity: 1;
+	filter: saturate(1);
+}
+

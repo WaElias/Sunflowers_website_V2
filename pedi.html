@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/estilo.css">
+<meta charset="utf-8">
+	
+<title>Sunflowers</title>
+	<video src="Videos/fondo3.mp4" autoplay="true" muted="true" loop="true" poster="Videos/fondo2.mp4" class="video"></video>
+</head>
+<body class="container">
+	
+	 <nav><img src="Imagenes/logo.png" class="logo_menu" alt="logomenu">
+        <p class="logo-SF">&nbsp;</p>
+        <ul class="menu">
+          <li class="link"> <a class="link" href="index.html">INICIO</a></li>
+            <li><a class="link" href="Sobre Nosotros.html">SOBRE NOSOTROS</a></li>
+            <li class="lista">
+                PRODUCTOS 
+                <ul class="ul-second">
+                    <li class="back"><a class="link" href="Ultimos_pedidos.html">ÚLTIMOS PEDIDOS</a></li>
+                    <li class="front">
+                        MATERIALES y PRECIOS
+                    	 <ul class="ul-third">
+                            <li><a class="link" href="Lienzo.html">CANVAS</a></li>
+                            <li><a class="link" href="madera.html">MADERAS</a></li>
+                        </ul>
+					</li>
+                </ul>
+            </li>
+            <li><a class="link" href="pedi.html">PEDIDOS</a></li>
+			<li><a class="link" href="creadores.html">CREADORES</a></li>
+			<li><a class="link"><button class="bcart" id="btn-abrir-modal"> <img src="Imagenes/carrito.png" class="cart" alt="compra"></button></a></li>
+			
+			<dialog id="modal">
+		<h1 class="vent">PEDIDOS REALIZADOS</h1>
+				<hr>
+    	<p class="car">
+      No has realizado ningun pedido:c
+			
+		<p> ( ｡ • ᴖ • ｡)( ｡ • ᴖ • ｡) </p>⠀
+		</p>
+		<button id="btn-cerrar-modal">cerrar</button>
+		
+	</dialog>
+			
+			
+        </ul>
+    </nav>
+
+<section class="sec-p">
+	
+	<form action="index.html" method="post">
+		<h1 class="rp">Realizar pedido</h1>
+		<hr>
+		
+		<fieldset id="logindatos">
+			
+			<p class="ft">Nombre y Apellido</p>
+			<input type="text" name="value" pattern="^[a-zA-Z\s]+$" title="Solo se acepta letras" class="control" placeholder="Nombre" required/>
+			<input type="text" name="value" pattern="^[a-zA-Z\s]+$" title="Solo se acepta letras" class="control" placeholder="Apellido" required/>
+			<br>
+			
+			<p class="ft">Teléfono y correo</p> 
+			<input type="tel" id="telefono" value="" pattern="^[0-9]{4}-?[0-9]{4}$" title="Solo acepta números en el siguiente formato: 2222-2222" class="control" placeholder="Número de teléfono" required/>
+			
+			<input type="email" id="correo" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Formato de correo: NombreCorreo@dominio" class="control" placeholder="Correo Electrónico" required/>
+			
+			<br>
+			
+			<p class="ft" >Subir una imagen</p>
+			<input type="file" name="fileToUpload" class="file">
+        	<input type="submit" value="Subir Imagen" name="submit">
+			<br>
+			
+			<button class="boton-a">Enviar</button>
+			
+			
+		</fieldset>
+	</form>
+</section>
+	<script src="js/V-emergente.js"></script>
+</body>
+	<footer>
+	Derechos reservados. 2023
+</footer>
+</html>
